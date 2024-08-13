@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px; /* Add some space between the company name and buttons */
+}
+
+.header-buttons .btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-buttons .btn:hover {
+    background-color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-name {
+        margin-bottom: 10px;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-buttons .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+/* main image logo */
+.main-image {
+    position: absolute;
+    top: 173px;
+    left: 50%;  /* Position the left edge at 50% of the parent width */
+    transform: translateX(-50%); /* Shift the element back by 50% of its own width to center it */
+    width: 251px;
+    height: 252px;
+    border-radius: 4px;
+}
+
